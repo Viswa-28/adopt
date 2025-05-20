@@ -55,3 +55,31 @@ tl.to(left, { x: -1000, ease: "none" }, 1)
 
 
 let card=document.querySelector('.card');
+
+let container=document.querySelector('.third');
+let left2=document.querySelector('.left');
+let right2=document.querySelector('.right');
+gsap.to(left2,{
+  scrollTrigger:{
+    trigger:container ,
+    start:"top center",
+    end:"bottom bottom",
+    scrub:true,
+    // pin:true,
+    // markers:true
+  },
+  x:50,
+  ease:"1",
+})
+gsap.to(right2,{
+  scrollTrigger:{
+    trigger:container,
+    start:"top center",
+    end:"bottom bottom",
+    scrub:true,
+    // pin:true,
+    // markers:true
+  },
+  x:-50,
+  ease:"1",
+})
