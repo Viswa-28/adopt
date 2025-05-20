@@ -33,13 +33,21 @@ body {
 
 .fs-24{
     font-size: clamp(1rem, 0.8519rem + 0.7407vw, 1.5rem);
-    font-weight: 600;
+    font-weight: 
+    400;
     color: #fff;
     /* text-align: center; */
     text-transform: capitalize;
 }   
 .fs-45{
     font-size: clamp(1rem, 0.463rem + 2.6852vw, 2.8125rem);
+    font-weight: 600;
+    color: #fff;
+    /* text-align: center; */
+    text-transform: capitalize;
+}
+.fs-30{
+    font-size: clamp(1rem, 0.5139rem + 1.5556vw, 1.875rem);
     font-weight: 600;
     color: #fff;
     /* text-align: center; */
@@ -94,6 +102,32 @@ body {
     box-shadow: inset 0px -100px 0px 0px #fff;
     background-color: #fff;
 }
+.third-btn{
+     /* border: 1px solid #fff;
+      */
+    color: #fff;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.32);
+    border: 1px solid #fff;
+    filter: blur(0px);
+
+    border-radius: 12px;
+    /* box-shadow: 0px 38px 48px rgba(0, 0, 2, 0.215); */
+    padding: 12px 20px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: transparent;
+}
+.third-btn:hover{
+    /* transform: inset (0px -100px 0px 0px)!important; */
+    color: #000;
+    transition: all 1s ease;
+    box-shadow: inset 0px -100px 0px 0px #fff;
+    background-color: #fff;
+}
+
 
 
 
@@ -120,13 +154,13 @@ body {
 
 /* banner */
 .banner{
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     overflow-x: hidden;
 }
 .banner .banner-sub{
   /* margin-top: 50px; */
-    height: 50%;
+    height: 80%;
     
     /* width: auto; */
    
@@ -187,14 +221,14 @@ body {
 
 
 .second{
-    height: 150vh;
+    height: 110vh;
     width: 100%;
     overflow-x: hidden;
 }
 
 .second .second-first{
-    /* height: 50%;
-    width: 100%; */
+    height: 30%;
+    /* width: 100%;  */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,12 +236,37 @@ body {
     /* background-color: grey; */
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0px 38px 48px rgba(0, 0, 0, 0.215);
+    /* box-shadow: 0px 38px 48px rgba(0, 0, 0, 0.215); */
     border-radius: 12px;
+    
     /* padding: 0 20px; */
+    padding-bottom: 20px;
+    cursor: pointer;
 }
 .second .second-first:hover img{
-    transform: translateY(-50%);
+    transform: translateY(-20%);
+    /* height: 500px; */
+    /* width: 100%; */
+    object-fit: cover;
+    object-position: start;
+    /* display: none; */
+    /* transform: rotate3d(1, 0, 0, 50deg); */
+    transition: all 0.7s ease;
+
+}
+.second .second-second:hover img{
+    transform: translateY(-20%);
+    /* height: 500px; */
+    /* width: 100%; */
+    object-fit: cover;
+    object-position: start;
+    /* display: none; */
+    /* transform: rotate3d(1, 0, 0, 50deg); */
+    transition: all 0.7s ease;
+
+}
+.second .second-third:hover img{
+    transform: translateY(-20%);
     /* height: 500px; */
     /* width: 100%; */
     object-fit: cover;
@@ -220,14 +279,16 @@ body {
 
 .second .second-second{
     height: 50%;
+    cursor: pointer;
     display: flex;
+     padding-bottom: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background-color: grey; */
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0px 38px 48px rgba(0, 0, 0, 0.215);
+    /* box-shadow: 0px 38px 48px rgba(0, 0, 0, 0.215); */
     border-radius: 12px;
     /* padding: 0 20px; */
 }
@@ -235,13 +296,15 @@ body {
     /* height: 50%;
     width: 100%; */
     display: flex;
+    cursor: pointer;
+     padding-bottom: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background-color: grey; */
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0px 38px 48px rgba(0, 0, 0, 0.215);
+    /* box-shadow: 0px 38px 48px rgba(0, 0, 0, 0.215); */
     border-radius: 12px;
     /* padding: 0 20px; */
 }
@@ -252,4 +315,9 @@ body {
     /* transform: translateY(-50%); */
     /* border-radius: 12px; */
     /* margin-bottom: 180px; */
+}
+.third{
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
 }
